@@ -1,0 +1,288 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3933263958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 617667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3458208,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HeroAppSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 147500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate Google Search",
+        "description": "",
+        "id": "google-search-functionality;validate-google-search",
+        "after": [
+          {
+            "result": {
+              "duration": 109427958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4030903625,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6648651041,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user searches for \"Tesla\" on Google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 18
+                }
+              ],
+              "location": "GoogleSteps.user_searches_for_on_Google(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5295333,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see \"Tesla\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2464041,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see \"Tesla\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Google"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Integration"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2897852750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1607250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4167166,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HeroAppSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 17791,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate Google Search Results",
+        "description": "",
+        "id": "google-search-functionality;validate-google-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 100766792,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4140287500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user navigates to \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6242312459,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user searches for \"Apple\" on Google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple\"",
+                  "offset": 18
+                }
+              ],
+              "location": "GoogleSteps.user_searches_for_on_Google(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26723291,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should see results are more than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 38
+                }
+              ],
+              "location": "GoogleSteps.userShouldSeeResultsAreMoreThan(long)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Google"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Functionality",
+    "description": "",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google.feature",
+    "tags": [
+      {
+        "name": "@Google",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
